@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modules and Filters &#8212; mayavi 4.7.2 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Mayavi API reference" href="api/index.html" />
+    <link rel="prev" title="Data" href="auto/mlab_pipeline_data.html" />
+<style type="text/css">
+  body {
+    /* Very bottom copyright, etc. info */
+    background: #4d598d;
+  }
+
+  .documentwrapper {
+    /* Blank area on left bar */
+    background: #24326e;
+  }
+
+  .related {
+    /* Long horizontal nav bars */
+    background: #3c4b8a!important;
+  }
+
+  .sphinxsidebarwrapper {
+    /* Filled part of left sidebar */
+    background: #24326e;
+  }
+
+  a {
+    color: #253370;
+  }
+
+  .sphinxsidebarwrapper a {
+    color: #f2f2f2!important;
+  }
+</style>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="api/index.html" title="Mayavi API reference"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="auto/mlab_pipeline_data.html" title="Data"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mayavi 4.7.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="auto/mlab_reference.html" >MLab reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="mlab_pipeline_reference.html" accesskey="U">Mlab pipeline-control reference</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Modules and Filters</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="modules-and-filters">
+<h1>Modules and Filters<a class="headerlink" href="#modules-and-filters" title="Permalink to this headline">¶</a></h1>
+<p>For each Mayavi module or filter, there is a corresponding
+<cite>mlab.pipeline</cite> factory function that takes as an input argument, the
+source on which the new module or filter will be added, and returns the
+created module object. The name of the function corresponds to the name
+of the module, but with words separated by underscores <cite>_</cite>, rather than
+alternating capitals.</p>
+<p>The input object, if it is a data source (Mayavi data source or VTK
+dataset), does not need to be already present in the figure, it will be
+automatically added if necessary.</p>
+<p>Factory functions take keyword arguments controlling some properties of
+the object added to the pipeline.</p>
+<p>For instance, the <cite>ScalarCutPlane</cite> module can be added with the following
+function:</p>
+<p>As the list is long, we shall not enumerate here all the factory function
+for adding modules or filters. You are invited to refer to their
+docstring for information on the keyword arguments they accept.</p>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/mayavi-logo.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="auto/mlab_pipeline_data.html"
+                        title="previous chapter">Data</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="api/index.html"
+                        title="next chapter">Mayavi API reference</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/mlab_pipeline_modules.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="api/index.html" title="Mayavi API reference"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="auto/mlab_pipeline_data.html" title="Data"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mayavi 4.7.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="auto/mlab_reference.html" >MLab reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="mlab_pipeline_reference.html" >Mlab pipeline-control reference</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Modules and Filters</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2008-2018, Enthought Inc..
+      Last updated on Dec 05, 2020.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.3.1.
+    </div>
+  </body>
+</html>

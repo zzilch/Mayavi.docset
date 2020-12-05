@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main view and UI objects &#8212; mayavi 4.7.2 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Known bugs and issues" href="../bugs.html" />
+    <link rel="prev" title="Pipeline base objects" href="pipeline_objects.html" />
+<style type="text/css">
+  body {
+    /* Very bottom copyright, etc. info */
+    background: #4d598d;
+  }
+
+  .documentwrapper {
+    /* Blank area on left bar */
+    background: #24326e;
+  }
+
+  .related {
+    /* Long horizontal nav bars */
+    background: #3c4b8a!important;
+  }
+
+  .sphinxsidebarwrapper {
+    /* Filled part of left sidebar */
+    background: #24326e;
+  }
+
+  a {
+    color: #253370;
+  }
+
+  .sphinxsidebarwrapper a {
+    color: #f2f2f2!important;
+  }
+</style>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../bugs.html" title="Known bugs and issues"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pipeline_objects.html" title="Pipeline base objects"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mayavi 4.7.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Mayavi API reference</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Main view and UI objects</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="main-view-and-ui-objects">
+<h1>Main view and UI objects<a class="headerlink" href="#main-view-and-ui-objects" title="Permalink to this headline">¶</a></h1>
+<p>This is an API reference of the views for the main objects.
+The section <a class="reference internal" href="../building_applications.html#builing-applications"><span class="std std-ref">Building applications using Mayavi</span></a> gives some context on
+how to use them.</p>
+<div class="section" id="scene-uis-decoratedscene-and-mayaviscene">
+<h2>Scene UIs: <code class="xref py py-class docutils literal notranslate"><span class="pre">DecoratedScene</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">MayaviScene</span></code><a class="headerlink" href="#scene-uis-decoratedscene-and-mayaviscene" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="sceneeditor">
+<h2><code class="xref py py-class docutils literal notranslate"><span class="pre">SceneEditor</span></code><a class="headerlink" href="#sceneeditor" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="mlabscenemodel">
+<h2><code class="xref py py-class docutils literal notranslate"><span class="pre">MlabSceneModel</span></code><a class="headerlink" href="#mlabscenemodel" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="engineview-and-enginerichview">
+<h2><code class="xref py py-class docutils literal notranslate"><span class="pre">EngineView</span></code> and  <code class="xref py py-class docutils literal notranslate"><span class="pre">EngineRichView</span></code><a class="headerlink" href="#engineview-and-enginerichview" title="Permalink to this headline">¶</a></h2>
+<p>These are two objects to be used as views for an engine:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mayavi.core.ui.api</span> <span class="kn">import</span> <span class="n">EngineView</span>
+<span class="n">view</span> <span class="o">=</span> <span class="n">EngineView</span><span class="p">(</span><span class="n">engine</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+<span class="n">view</span><span class="o">.</span><span class="n">edit_traits</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/mayavi-logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Main view and UI objects</a><ul>
+<li><a class="reference internal" href="#scene-uis-decoratedscene-and-mayaviscene">Scene UIs: <code class="xref py py-class docutils literal notranslate"><span class="pre">DecoratedScene</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">MayaviScene</span></code></a></li>
+<li><a class="reference internal" href="#sceneeditor"><code class="xref py py-class docutils literal notranslate"><span class="pre">SceneEditor</span></code></a></li>
+<li><a class="reference internal" href="#mlabscenemodel"><code class="xref py py-class docutils literal notranslate"><span class="pre">MlabSceneModel</span></code></a></li>
+<li><a class="reference internal" href="#engineview-and-enginerichview"><code class="xref py py-class docutils literal notranslate"><span class="pre">EngineView</span></code> and  <code class="xref py py-class docutils literal notranslate"><span class="pre">EngineRichView</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pipeline_objects.html"
+                        title="previous chapter">Pipeline base objects</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../bugs.html"
+                        title="next chapter">Known bugs and issues</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/core_view_objects.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../bugs.html" title="Known bugs and issues"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pipeline_objects.html" title="Pipeline base objects"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mayavi 4.7.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Mayavi API reference</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Main view and UI objects</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2008-2018, Enthought Inc..
+      Last updated on Dec 05, 2020.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.3.1.
+    </div>
+  </body>
+</html>

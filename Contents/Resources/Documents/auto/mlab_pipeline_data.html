@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Data — mayavi 4.7.2 documentation</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/classic.css" rel="stylesheet" type="text/css"/>
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/language_data.js"></script>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="../mlab_pipeline_modules.html" rel="next" title="Modules and Filters"/>
+<link href="mlab_pipeline_tools.html" rel="prev" title="Tools"/>
+<style type="text/css">
+  body {
+    /* Very bottom copyright, etc. info */
+    background: #4d598d;
+  }
+
+  .documentwrapper {
+    /* Blank area on left bar */
+    background: #24326e;
+  }
+
+  .related {
+    /* Long horizontal nav bars */
+    background: #3c4b8a!important;
+  }
+
+  .sphinxsidebarwrapper {
+    /* Filled part of left sidebar */
+    background: #24326e;
+  }
+
+  a {
+    color: #253370;
+  }
+
+  .sphinxsidebarwrapper a {
+    color: #f2f2f2!important;
+  }
+</style>
+</head><body>
+<div aria-label="related navigation" class="related" role="navigation">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="../mlab_pipeline_modules.html" title="Modules and Filters">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="mlab_pipeline_tools.html" title="Tools">previous</a> |</li>
+<li class="nav-item nav-item-0"><a href="../index.html">mayavi 4.7.2 documentation</a> »</li>
+<li class="nav-item nav-item-1"><a href="mlab_reference.html">MLab reference</a> »</li>
+<li class="nav-item nav-item-2"><a accesskey="U" href="../mlab_pipeline_reference.html">Mlab pipeline-control reference</a> »</li>
+<li class="nav-item nav-item-this"><a href="">Data</a></li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body" role="main">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section is only a reference describing the function, please see
+the chapter on <a class="reference internal" href="../mlab.html#simple-scripting-with-mlab"><span class="std std-ref">mlab: Python scripting for 3D plotting</span></a> for an introduction to
+mlab and how to interact with and assemble the functions of <cite>mlab</cite>.</p>
+<p>Please see the section on <a class="reference internal" href="../mlab_running_scripts.html#running-mlab-scripts"><span class="std std-ref">Running mlab scripts</span></a> for
+instructions on running the examples.</p>
+</div>
+<div class="section" id="data">
+<h1>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="probe-data">
+<h2>probe_data<a class="headerlink" href="#probe-data" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="mayavi.tools.pipeline.probe_data"><a name="//apple_ref/cpp/Function/mayavi.tools.pipeline.probe_data"></a>
+<code class="sig-prename descclassname">mayavi.tools.pipeline.</code><code class="sig-name descname">probe_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mayavi_object</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">z</span></em>, <em class="sig-param"><span class="n">type</span><span class="o">=</span><span class="default_value">'scalars'</span></em>, <em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">'points'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#mayavi.tools.pipeline.probe_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the data from a described by Mayavi visualization object
+at points x, y, z.</p>
+<p><strong>Parameters</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Viz_obj</dt>
+<dd class="field-odd"><p>A Mayavi visualization object, or a VTK dataset
+The object describing the data you are interested in.</p>
+</dd>
+<dt class="field-even">X</dt>
+<dd class="field-even"><p>float or ndarray.
+The x position where you want to retrieve the data.</p>
+</dd>
+<dt class="field-odd">Y</dt>
+<dd class="field-odd"><p>float or ndarray.
+The y position where you want to retrieve the data.</p>
+</dd>
+<dt class="field-even">Z</dt>
+<dd class="field-even"><p>float or ndarray
+The z position where you want to retrieve the data.</p>
+</dd>
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>‘scalars’, ‘vectors’ or ‘tensors’, optional
+The type of the data to retrieve.</p>
+</dd>
+<dt class="field-even">Location</dt>
+<dd class="field-even"><p>‘points’ or ‘cells’, optional
+The location of the data to retrieve.</p>
+</dd>
+</dl>
+<p><strong>Returns</strong></p>
+<p>The values of the data at the given point, as an ndarray
+(or multiple arrays, in the case of vectors or tensors) of the
+same shape as x, y, and z.</p>
+</dd></dl>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+</div>
+</div>
+<div aria-label="main navigation" class="sphinxsidebar" role="navigation">
+<div class="sphinxsidebarwrapper">
+<p class="logo"><a href="../index.html">
+<img alt="Logo" class="logo" src="../_static/mayavi-logo.png"/>
+</a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul>
+<li><a class="reference internal" href="#">Data</a><ul>
+<li><a class="reference internal" href="#probe-data">probe_data</a></li>
+</ul>
+</li>
+</ul>
+<h4>Previous topic</h4>
+<p class="topless"><a href="mlab_pipeline_tools.html" title="previous chapter">Tools</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="../mlab_pipeline_modules.html" title="next chapter">Modules and Filters</a></p>
+<div aria-label="source link" role="note">
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../_sources/auto/mlab_pipeline_data.rst.txt" rel="nofollow">Show Source</a></li>
+</ul>
+</div>
+<div id="searchbox" role="search" style="display: none">
+<h3 id="searchlabel">Quick search</h3>
+<div class="searchformwrapper">
+<form action="../search.html" class="search" method="get">
+<input aria-labelledby="searchlabel" name="q" type="text"/>
+<input type="submit" value="Go"/>
+</form>
+</div>
+</div>
+<script>$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div aria-label="related navigation" class="related" role="navigation">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="../mlab_pipeline_modules.html" title="Modules and Filters">next</a> |</li>
+<li class="right">
+<a href="mlab_pipeline_tools.html" title="Tools">previous</a> |</li>
+<li class="nav-item nav-item-0"><a href="../index.html">mayavi 4.7.2 documentation</a> »</li>
+<li class="nav-item nav-item-1"><a href="mlab_reference.html">MLab reference</a> »</li>
+<li class="nav-item nav-item-2"><a href="../mlab_pipeline_reference.html">Mlab pipeline-control reference</a> »</li>
+<li class="nav-item nav-item-this"><a href="">Data</a></li>
+</ul>
+</div>
+<div class="footer" role="contentinfo">
+        © Copyright 2008-2018, Enthought Inc..
+      Last updated on Dec 05, 2020.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.3.1.
+    </div>
+</body>
+</html>
